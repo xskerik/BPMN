@@ -78,6 +78,26 @@ example: 2 options
 curl -X GET localhost:8090/invoices/isInReclamationTime?idInvoice=2;
 curl -X GET localhost:8090/invoices/2/isInReclamationTime;
 ```
+
+
+## Invoice without HATEOAS
+
+### get flat Invoice
+```sh
+curl -X GET localhost:8090/invoices/get?idInvoice=1
+```
+
+## Product without HATEOAS
+
+### get is Product on Stock
+```sh
+curl -X GET localhost:8090/products/isProductOnStock?idProduct=1
+```
+
+```sh
+curl -X GET localhost:8090/products/get?idProduct=1
+```
+
 ## Best solution resource
 under construction
 
